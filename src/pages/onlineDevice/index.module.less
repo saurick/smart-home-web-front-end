@@ -1,0 +1,66 @@
+.onlineDeviceWrapper {
+    :global {
+        .mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            box-sizing: content-box;
+            border-color: rgba(0, 0, 0, 0.5);
+            border-style: solid;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        .online-device-mac {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .online-circle {
+                width: 6px;
+                height: 6px;
+                background-color: #43B241;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .offline-circle {
+                width: 6px;
+                height: 6px;
+                background-color: #686C77;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .mac {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #34363C;
+                -webkit-background-clip: text;
+            }
+        }
+
+        .switch-icon {
+            cursor: pointer;
+        }
+
+        .params-active {
+            font-size: 14px;
+            font-family: PingFang SC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #2E6DEF;
+            -webkit-background-clip: text;
+            cursor: pointer;
+        }
+
+        .params-disabled {
+            font-size: 14px;
+            font-family: PingFang SC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #959CA5;
+            -webkit-background-clip: text;
+            cursor: not-allowed;
+        }
+    }
+}

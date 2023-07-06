@@ -1,0 +1,341 @@
+.networkConfigWrapper {
+    :global {
+        .wlan-content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+
+            .wlan-select-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 496px;
+
+                .wlan-select-title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #B9C0C9;
+
+                    .title {
+                        font-size: 14px;
+                        font-family: PingFang SC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        color: #27292E;
+                        -webkit-background-clip: text;
+                    }
+
+                    .switch {
+                        min-width: 39px;
+                        margin-right: 128px;
+                    }
+                }
+
+                .list-wrapper {
+                    max-height: 500px;
+                    overflow-y: auto;
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        background: #CED0DC;
+                        border-radius: 7px 7px 7px 7px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 7px 7px 7px 7px;
+                        box-shadow: inset 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+                    }
+
+                    .item-wrapper {
+                        display: flex;
+                        align-items: center;
+                        height: 52px;
+                        border-bottom: 1px solid #B9C0C9;
+                        cursor: pointer;
+
+                        .icon-check-wrapper {
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 18px;
+
+                            .icon-check {
+                                width: 15px;
+                                height: 15px;
+                                color: #205AD2;
+                            }
+                        }
+
+                        .item-right-wrapper:hover {
+                            background: #ECEFF8;
+                        }
+
+                        .item-right-wrapper {
+                            box-sizing: content-box;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-left: 20px;
+                            height: 100%;
+                            width: 100%;
+
+                            .wlan-wrapper {
+                                display: flex;
+                                align-items: center;
+
+                                .icon-wlan {
+                                    width: 19px;
+                                    height: 19px;
+                                    margin-right: 12px;
+                                }
+
+                                .wlan-name {
+                                    font-size: 14px;
+                                    font-family: PingFang SC-Regular, PingFang SC;
+                                    font-weight: 400;
+                                    color: #27292E;
+                                    -webkit-background-clip: text;
+                                }
+                            }
+
+                            .icon-lock {
+                                width: 14px;
+                                height: 14px;
+                                margin-right: 74px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .wlan-settings-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                font-size: 14px;
+                font-family: PingFang SC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: #27292E;
+                -webkit-background-clip: text;
+                padding-left: 5px;
+                margin-bottom: 28px;
+                white-space: nowrap;
+            }
+
+            .type-password-wrapper {
+                display: flex;
+                align-items: center;
+                margin-bottom: 23px;
+
+                .password-left-wrapper {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 18px;
+
+                    .red-star {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #FA1E1E;
+                        -webkit-background-clip: text;
+                        margin-right: 5px;
+                    }
+
+                    .password {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #686C77;
+                        -webkit-background-clip: text;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            .advanced-options {
+                font-size: 14px;
+                font-family: PingFang SC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: #686C77;
+                -webkit-background-clip: text;
+                margin-bottom: 9px;
+            }
+
+            .select-mode-wrapper {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+
+                .mode-left-wrapper {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 18px;
+
+                    .red-star {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #FA1E1E;
+                        -webkit-background-clip: text;
+                        margin-right: 5px;
+                    }
+
+                    .mode {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #686C77;
+                        -webkit-background-clip: text;
+                        white-space: nowrap;
+                    }
+                }
+
+                .select-mode {
+                    width: 315px;
+                    height: 32px;
+                    background: #F7F8FA;
+                    border-radius: 2px 2px 2px 2px;
+                }
+            }
+
+            .network-settings-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 375px;
+                height: 226px;
+                background: #F5F8FD;
+                border-radius: 0px 0px 0px 0px;
+                padding-top: 23px;
+                padding-bottom: 27px;
+                padding-left: 16px;
+                padding-right: 16px;
+                margin-bottom: 24px;
+
+                .type-ip-wrapper,
+                .type-subnet-mask-wrapper,
+                .type-gateway-wrapper,
+                .type-dns-server-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 16px;
+                }
+
+                .ip,
+                .subnet-mask,
+                .gateway,
+                .dns-server {
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #000000;
+                    -webkit-background-clip: text;
+                }
+            }
+
+            .confirm-button-wrapper {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .wired-network-settings-wrapper {
+            // width: 491px;
+            margin-top: 25px;
+
+            .title {
+                font-size: 14px;
+                font-family: PingFang SC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: #27292E;
+                -webkit-background-clip: text;
+                margin-bottom: 14px;              
+            }
+
+            .select-mode-wrapper {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+
+                .mode-left-wrapper {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 18px;
+                    white-space: nowrap;
+                    .red-star {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #FA1E1E;
+                        -webkit-background-clip: text;
+                        margin-right: 5px;
+                    }
+
+                    .mode {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #686C77;
+                        -webkit-background-clip: text;
+                    }
+                }
+
+                .select-mode {
+                    width: 315px;
+                    height: 32px;
+                    background: #F7F8FA;
+                    border-radius: 2px 2px 2px 2px;
+                }
+            }
+
+            .network-settings-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 226px;
+                background: #F5F8FD;
+                border-radius: 0px 0px 0px 0px;
+                padding-top: 25px;
+                padding-bottom: 28px;
+                padding-left: 25px;
+                padding-right: 123px;
+                margin-bottom: 28px;
+
+                .type-ip-wrapper,
+                .type-subnet-mask-wrapper,
+                .type-gateway-wrapper,
+                .type-dns-server-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 16px;
+                }
+
+                .ip,
+                .subnet-mask,
+                .gateway,
+                .dns-server {
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #000000;
+                    -webkit-background-clip: text;
+                }
+            }
+
+            .confirm-button-wrapper {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .ant-switch-checked {
+            background: #2558BF;
+        }
+    }
+}

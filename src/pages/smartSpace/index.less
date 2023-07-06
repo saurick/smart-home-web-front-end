@@ -1,0 +1,109 @@
+.ant-modal {
+    width: 50%;
+    height: 25%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    .ant-modal-content {
+        width: 345px;
+        height: 150px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 4px 4px 4px 4px;
+        opacity: 1;
+
+        .ant-modal-body {
+            padding-top: 34px;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 24px;
+
+            .ant-modal-confirm-body-wrapper {
+                .ant-modal-confirm-body {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-bottom: 40px;
+
+                    .tip-icon {
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 9px;
+                    }
+
+                    .save-edit-title {
+                        width: 196px;
+                        font-size: 14px;
+                        font-family: PingFang SC-Medium, PingFang SC;
+                        font-weight: 500;
+                        color: #27292E;
+                        -webkit-background-clip: text;
+                    }
+                }
+            }
+
+            .ant-modal-confirm-btns {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .ant-btn-default {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 65px !important;
+                    height: 32px !important;
+                    // background: #FFFFFF;
+                    border-radius: 4px 4px 4px 4px;
+                    opacity: 1;
+                    border: 1px solid #B9C0C9;
+                    width: 33px;
+                    height: 20px;
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #27292E;
+                    -webkit-background-clip: text;
+                }
+
+                .ant-btn-default:hover {
+                    background-color: #F1F2F4 !important;
+                }
+
+                .ant-btn-default:active {
+                    background-color: #E7E8EE !important;
+                }
+
+                .ant-btn-primary {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 65px !important;
+                    height: 32px !important;
+                    background: #205AD2 !important;
+                    border: unset;
+                    border-radius: 4px 4px 4px 4px;
+                    opacity: 1;
+                    width: 33px;
+                    height: 20px;
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    -webkit-background-clip: text;
+                }
+                .ant-btn-primary:hover {
+                    background-color: #376DDF !important;
+                }
+
+                .ant-btn-primary:active {
+                    background-color: #1750C5 !important;
+                }
+            }
+        }
+    }
+}

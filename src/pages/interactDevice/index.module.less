@@ -1,0 +1,89 @@
+.interactDeviceWrapper {
+    :global {
+        .interact-settings-modal-wrapper {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 16px;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-bottom: 14px;
+            width: 354px;
+            height: 346px;
+            // height: 600px;
+            background: #FFFFFF;
+            border-radius: 6px 6px 6px 6px;
+            opacity: 1;
+            z-index: 1001;
+
+            .device-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 326px;
+                height: 130px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 16px;
+                padding-right: 16px;
+                background: #FFFFFF;
+                border-radius: 4px 4px 4px 4px;
+                border: 1px solid #D3D9F0;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    // .device1 {
+                    //     background: #EFF2FC;
+                    // }
+                }
+
+                .bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .device1,
+                .device2,
+                .device3,
+                .device4 {
+                    // display: flex;
+                    // align-items: center;
+                    width: 128px;
+                    height: 36px;
+                    padding: 8px;
+                    font-size: 14px;
+                    font-family: PingFang SC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: #58616D;
+                    -webkit-background-clip: text;
+                    border-radius: 4px 4px 4px 4px;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+
+                .device2,
+                .device4 {
+                    text-align: end;
+                }
+            }
+        }
+
+        .mask {
+            position: fixed;
+            left: 0;
+            top: 0;
+            box-sizing: content-box;
+            border-color: rgba(0, 0, 0, 0.5);
+            border-style: solid;
+            background: transparent;
+            z-index: 1;
+        }
+    }
+}

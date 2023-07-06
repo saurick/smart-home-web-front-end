@@ -1,0 +1,48 @@
+.smartSpaceWrapper {
+    height: 100%;
+    overflow-y: auto;
+    :global {
+        .smart-space-card-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            .add-card-wrapper-default {
+                // flex: 1 1 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 267px;
+                min-height: 158px;
+                background: #F4F5F6;
+                border-radius: 4px 4px 4px 4px;
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .add-card-wrapper-hover {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 267px;
+                min-height: 158px;
+                background: #E9EBEF;
+                border-radius: 4px 4px 4px 4px;
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .footer-wrapper {
+                position: absolute;
+                width: calc(100% - 232px);
+                height: 60px;
+                background: #FFFFFF;
+                // box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.08);
+                opacity: 1;
+                bottom: 0;
+                right: 16px;
+            }
+        }
+    }
+}

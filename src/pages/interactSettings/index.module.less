@@ -1,0 +1,186 @@
+.interactSettingsWrapper {
+    :global {
+        .interact-settings-header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .header-left-wrapper {
+                display: flex;
+                align-items: flex-start;
+
+                .interact-settings-card-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 8px;
+                    width: 233px;
+                    height: 225px;
+                    background: #FFFFFF;
+                    border-radius: 6px 6px 6px 6px;
+                    border: 1px solid #B9C0C9;
+                    margin-right: 45px;
+
+                    .device-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 216px;
+                        height: 101px;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        background: #FFFFFF;
+                        border-radius: 4px 4px 4px 4px;
+                        border: 1px solid #D3D9F0;
+
+                        .top,
+                        .bottom {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                        .device1,
+                        .device2,
+                        .device3,
+                        .device4 {
+                            width: 72px;
+                            font-size: 14px;
+                            font-family: PingFang SC-Semibold, PingFang SC;
+                            font-weight: 600;
+                            color: #58616D;
+                            -webkit-background-clip: text;
+                            border-radius: 4px 4px 4px 4px;
+                            cursor: pointer;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+
+                        .device2,
+                        .device4 {
+                            text-align: end;
+                        }
+                    }
+                }
+
+                .device-info-wrapper-left {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    margin-right: 76px;
+
+                    .device-name-wrapper {
+                        display: flex;
+
+                        .device-name {}
+
+                        .value {
+                            font-size: 16px;
+                            font-family: PingFang SC-Semibold, PingFang SC;
+                            font-weight: 600;
+                            color: #3F5D9C;
+                            line-height: 19px;
+                            -webkit-background-clip: text;
+                        }
+                    }
+
+                    .mac-wrapper {
+                        display: flex;
+                        margin-top: 20px;
+
+                        .mac {}
+
+                        .value {}
+                    }
+
+                    .bitmap-num-wrapper {
+                        display: flex;
+                        margin-top: 20px;
+
+                        .bitmap {}
+
+                        .value {}
+                    }
+
+                    .device-name,
+                    .mac,
+                    .bitmap {
+                        width: 56px;
+                        height: 20px;
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #686C77;
+                        -webkit-background-clip: text;
+                        margin-right: 20px;
+                    }
+
+                    .value {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #27292E;
+                        -webkit-background-clip: text;
+                    }
+                }
+
+                .device-info-wrapper-right {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+
+                    .device-type-wrapper {
+                        display: flex;
+
+                        .device-type {}
+
+                        .value {}
+                    }
+
+                    .located-space-wrapper {
+                        display: flex;
+                        margin-top: 20px;
+
+                        .located-space {}
+
+                        .value {}
+                    }
+
+                    .device-type,
+                    .located-space {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #686C77;
+                        -webkit-background-clip: text;
+                        margin-right: 20px;
+                    }
+
+                    .value {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #27292E;
+                        -webkit-background-clip: text;
+                    }
+                }
+            }
+
+            .button-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                height: 225px;
+            }
+        }
+    }
+
+    .tableRowActive {
+        background: #CFDDFC !important;
+    }
+}

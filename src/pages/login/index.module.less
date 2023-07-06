@@ -1,0 +1,119 @@
+.loginWrapper {
+    height: calc(100vh + 150px);
+    :global {
+        .login-background-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #212130;
+            overflow: hidden;
+            // background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 25%;
+            margin-top: -150px;
+            // .login-logo {
+            //     width: 308px;
+            //     height: 118px;
+            // }
+
+            .login-title {
+                width: 364px;
+                height: 39px;
+                font-size: 28px;
+                font-family: PingFang SC-Semibold, PingFang SC;
+                font-weight: 600;
+                background: -webkit-linear-gradient(180deg, #A9BCEC 0%, #7492DF 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .login-password-wrapper {
+                display: flex;
+                flex-direction: column;
+                margin-top: 56px;
+               
+                .password {
+                    width: 56px;
+                    height: 20px;
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #9BABD4;
+                    -webkit-background-clip: text;
+                }
+
+                .password-input-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    width: 320px;
+                    height: 36px;
+                    box-sizing: border-box;
+                    .icon {
+                        position: absolute;
+                        // width: 18px;
+                        // height: 18px;
+                        margin-left: 8px;
+                        cursor: pointer;
+                        z-index: 1000;
+                    }
+
+                    input {
+                        padding-top: 8px;
+                        padding-left: 42px;
+                        padding-right: 11px;
+                        padding-bottom: 8px;
+                        width: 320px;
+                        height: auto;
+                        background: #454552;
+                        border-radius: 4px 4px 4px 4px;
+                        border: 1px solid #555B77;
+                        outline: unset;
+                    }
+
+                    input:-webkit-autofill {
+                        // -webkit-text-fill-color: #acfff2 !important;/*浏览器记住密码的字的颜色*/
+                        transition: background-color 5000s ease-in-out 0s;/*通过延时渲染背景色变相去除背景颜色*/
+                        // caret-color: #acfff2;/*光标颜色*/
+                    }
+                    
+                    input:focus { outline: none; }/*外边框线去除*/
+
+                    input::placeholder {
+                        font-size: 14px;
+                        font-family: PingFang SC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #7D7D8A;
+                        -webkit-background-clip: text;
+                    }
+                }
+            }
+
+            .login-button-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 320px;
+                height: 36px;
+                background: #2558BF;
+                border-radius: 4px 4px 4px 4px;
+                border: 1px solid;
+                border-image: linear-gradient(175deg, rgba(58, 108, 209, 0), rgba(54, 123, 218, 1)) 1 1;
+                margin-top: 49px;
+                cursor: pointer;
+                .login {
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    -webkit-background-clip: text;
+
+                }
+            }
+        }
+    }
+}

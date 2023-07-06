@@ -1,0 +1,176 @@
+.inputCustom {
+    :global {
+        .input-default {
+            background: #F7F8FA;
+            border-radius: 4px 4px 4px 4px;
+            color: #34363C;
+            width: 188px;
+            height: 36px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: PingFang SC-Regular, PingFang SC;
+            outline: none;
+            border: none;
+
+            &::placeholder {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #959CA5;
+                line-height: 16px;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: #959CA5;
+            }
+
+            &:hover {
+                background-color: #EDEFF1;
+            }
+
+            &:focus {
+                background-color: #FFFFFF;
+                border: 1px solid #2558BF;
+            }
+        }
+
+        .error-info-default {
+            font-size: 12px;
+            font-family: PingFang SC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #E73131;
+            -webkit-background-clip: text;
+            margin-left: 16px;
+            margin-top: 1px;
+        }
+
+        .input-on-base-color {
+            background: #FFFFFF;
+            border-radius: 4px 4px 4px 4px;
+            color: #34363C;
+            width: 260px;
+            height: 32px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: PingFang SC-Regular, PingFang SC;
+            outline: none;
+            border: 1px solid #D9D9D9;
+
+            &::placeholder {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #959CA5;
+                line-height: 16px;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: #959CA5;
+            }
+        }
+
+        .increase-decrease-button-wrapper {
+            display: flex;
+            align-items: center;
+
+            .title {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #27292E;
+                -webkit-background-clip: text;
+                margin-right: 6px;
+                white-space: nowrap;
+            }
+
+            .increase-decrease-button {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 76px;
+                height: 36px;
+                background: #F7F8FA;
+                border-radius: 2px 2px 2px 2px;
+                opacity: 1;
+
+                .increase-decrease-arrow-left-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 16px;
+                    height: 100%;
+                    border-radius: 4px 4px 4px 4px;
+                    cursor: pointer;
+
+                    .increase-decrease-arrow-left {
+                        width: 4px;
+                        height: 4px;
+                        border-top: 1px solid #808186;
+                        border-left: 1px solid #808186;
+                        transform: rotate(-45deg);
+                    }
+
+                    &:hover {
+                        background-color: #EDEFF1;
+                    }
+                }
+
+                .increase-decrease-value {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 36px;
+                    border-radius: 4px 4px 4px 4px;
+                    background: #F7F8FA;
+                    outline: none;
+                    padding: unset;
+                    border: none;
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #27292E;
+                    -webkit-background-clip: text;
+
+                    &:hover {
+                        background-color: #EDEFF1;
+                    }
+
+                    &:focus {
+                        border-radius: 4px 4px 4px 4px;
+                        background-color: #FFFFFF;
+                        border: 1px solid #2558BF;
+                    }
+                }
+
+                .increase-decrease-arrow-right-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 16px;
+                    height: 100%;
+                    border-radius: 4px 4px 4px 4px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #EDEFF1;
+                    }
+
+                    .increase-decrease-arrow-right {
+                        width: 4px;
+                        height: 4px;
+                        border-top: 1px solid #808186;
+                        border-right: 1px solid #808186;
+                        transform: rotate(45deg);
+                    }
+                }
+
+            }
+        }
+    }
+}

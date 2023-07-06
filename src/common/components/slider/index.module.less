@@ -1,0 +1,127 @@
+.sliderWrapper {
+    :global {
+        .slider-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .title {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #000000;
+                -webkit-background-clip: text;
+                margin-right: 12px;
+            }
+
+            // .slider {
+            //     position: relative;
+            //     margin-right: 10px;
+            //     width: 276px;
+
+            //     .bar {
+            //         width: 276px;
+            //         height: 8px;
+            //         border-radius: 9px;
+            //         background: #E8ECFA;
+            //         position: absolute;
+            //         top: 0;
+            //         bottom: 0;
+            //         left: 0;
+            //         right: 0;
+            //         margin: auto;
+            //         cursor: pointer;
+            //     }
+
+            //     .progress {
+            //         position: absolute;
+            //         top: 0;
+            //         bottom: 0;
+            //         left: 0;
+            //         // right: 0;
+            //         margin: auto;
+            //         width: 0;
+            //         height: 8px;
+            //         border-radius: 10px;
+            //         // background: #205AD2;
+
+            //     }
+
+            //     .dot {
+            //         display: flex;
+            //         justify-content: center;
+            //         width: 24px;
+            //         height: 24px;
+            //         position: absolute;
+            //         top: 0;
+            //         bottom: 0;
+            //         left: -2px;
+            //         right: 0;
+            //         margin: auto 0;
+            //         border-radius: 50%;
+            //         cursor: pointer;
+            //         z-index: 999;
+            //     }
+            // }
+
+            .rc-slider-wrapper {
+                position: relative;
+                height: 24px;
+                width: 276px;
+                border-radius: 6px;
+                -ms-touch-action: none;
+                touch-action: none;
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                margin-right: 12px;
+                .rc-slider {
+                    position: absolute;
+                    margin: auto 0;
+                    height: 24px;
+                    width: 100%;
+                    border-radius: 6px;
+                    -ms-touch-action: none;
+                    touch-action: none;
+                    box-sizing: border-box;
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    margin-right: 12px;
+                    z-index: 1002;
+                }
+    
+                .rc-slider-background {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto 0;
+                    height: 8px;
+                    width: 100%;
+                    border-radius: 6px;
+                    margin-right: 12px;
+                    background-color: #E8ECFA;
+                }
+            }
+
+            
+
+            .percentage {
+                width: 40px;
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #000000;
+                -webkit-background-clip: text;
+            }
+
+            .num {
+                width: 40px;
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #000000;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}

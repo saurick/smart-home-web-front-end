@@ -1,0 +1,52 @@
+.hostModeWrapper {
+    :global {
+        .bureau-end-host-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 28px;
+
+            .tip {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #686C77;
+                -webkit-background-clip: text;
+                margin-bottom: 21px;
+            }
+
+            .form-wrapper {
+                width: 540px;
+                .type-mac-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 16px;
+                }
+
+                .type-ip-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 24px;
+                }
+
+                .mac,
+                .ip {
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #27292E;
+                    -webkit-background-clip: text;
+                    margin-right: 10px;
+                }
+
+                .buttons-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: calc(100%);
+                }
+            }
+        }
+    }
+}

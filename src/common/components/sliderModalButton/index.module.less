@@ -1,0 +1,243 @@
+.sliderModalButtonWrapper {
+    :global {
+        .up-open-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .top {
+                width: 16px;
+                border: 1px solid #686C77;
+                margin-top: 6px;
+
+            }
+
+            .bottom {
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #686C77;
+                border-left: 2px solid #686C77;
+                transform: rotate(45deg);
+                margin-top: 6px;
+            }
+        }
+
+        .down-open-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .top {
+                width: 16px;
+                border: 1px solid #686C77;
+                margin-top: 0px;
+            }
+
+            .bottom {
+                width: 10px;
+                height: 10px;
+                border-right: 2px solid #686C77;
+                border-bottom: 2px solid #686C77;
+                transform: rotate(45deg);
+                margin-top: 1px;
+            }
+        }
+
+        .open-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 9px;
+            padding-right: 9px;
+
+            .left {
+                width: 10px;
+                height: 10px;
+                border-bottom: 2px solid #686C77;
+                border-left: 2px solid #686C77;
+                transform: rotate(45deg);
+            }
+
+            .right {
+                width: 10px;
+                height: 10px;
+                border-right: 2px solid #686C77;
+                border-top: 2px solid #686C77;
+                transform: rotate(45deg);
+            }
+        }
+
+        .close-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            .left {
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #686C77;
+                border-right: 2px solid #686C77;
+                transform: rotate(45deg);
+            }
+
+            .right {
+                width: 10px;
+                height: 10px;
+                border-bottom: 2px solid #686C77;
+                border-left: 2px solid #686C77;
+                transform: rotate(45deg);
+            }
+        }
+
+        .light-transmission-open-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 11px;
+            padding-right: 11px;
+
+            .left {
+                height: 16px;
+                border: 1px solid #686C77;
+            }
+
+            .middle {
+                height: 16px;
+                border: 1px solid #686C77;
+            }
+
+            .right {
+                height: 16px;
+                border: 1px solid #686C77;
+            }
+        }
+
+        .light-transmission-close-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                width: 16px;
+                border: 1px solid #686C77;
+            }
+        }
+
+        .stop-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 14px;
+            padding-right: 14px;
+
+            .left {
+                height: 14px;
+                border: 1px solid #686C77;
+            }
+
+            .right {
+                height: 14px;
+                border: 1px solid #686C77;
+            }
+        }
+
+        .decrease-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                width: 16px;
+                border: 1px solid #686C77;
+            }
+        }
+
+        .increase-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon-vertical {
+                position: absolute;
+                height: 16px;
+                border: 1px solid #686C77;
+            }
+
+            .icon-horizontal {
+                width: 16px;
+                border: 1px solid #686C77;
+            }
+        }
+
+        .up-open-button,
+        .down-open-button,
+        .open-button,
+        .close-button,
+        .light-transmission-open-button,
+        .light-transmission-close-button,
+        .stop-button,
+        .increase-button,
+        .decrease-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px 4px 4px 4px;
+            opacity: 1;
+            border: 1px solid #D9D9D9;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .up-open-button:hover,
+        .down-open-button:hover,
+        .open-button:hover,
+        .close-button:hover,
+        .light-transmission-open-button:hover,
+        .light-transmission-close-button:hover,
+        .stop-button:hover,
+        .increase-button:hover,
+        .decrease-button:hover {
+            background-color: #EDF0F6;
+        }
+
+        .up-open-button:active,
+        .down-open-button:active,
+        .open-button:active,
+        .close-button:active,
+        .light-transmission-open-button:active,
+        .light-transmission-close-button:active,
+        .stop-button:active,
+        .increase-button:active,
+        .decrease-button:active {
+            background-color: #E4E7EE;
+        }
+
+        .mode-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 76px;
+            height: 32px;
+            border-radius: 4px 4px 4px 4px;
+            opacity: 1;
+            border: 1px solid #D9D9D9;
+            background-color: #FFFFFF;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: PingFang SC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #000000;
+            -webkit-background-clip: text;
+            .text {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #000000;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}

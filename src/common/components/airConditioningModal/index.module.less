@@ -1,0 +1,199 @@
+.airConditioningModalWrapper {
+    :global {
+        .temperature-adjust-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 25px;
+            width: 100%;
+
+            .title {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #27292E;
+                -webkit-background-clip: text;
+                margin-right: 13px;
+            }
+
+            .input-wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .decrease-button {
+                    margin-right: 16px;
+                }
+
+                .value-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 230px;
+                    height: 36px;
+                    background: #F7F8FA;
+                    border-radius: 4px 4px 4px 4px;
+                    margin-right: 16px;
+                }
+
+                .value {
+                    font-size: 16px;
+                    font-family: PingFang SC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: #000000;
+                    -webkit-background-clip: text;
+                }
+
+                .increase-button {}
+            }
+        }
+
+        .mode-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            margin-top: 29px;
+
+            .title {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #000000;
+                -webkit-background-clip: text;
+                margin-right: 12px;
+            }
+
+            .mode-button-wrapper {
+                display: flex;
+                align-items: center;
+
+                .dehumidify-button {
+                    margin-right: 16px;
+                }
+
+                .air-supply-button {}
+            }
+        }
+
+        .wind-velocity-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            width: 100%;
+            margin-top: 18px;
+
+            .title {
+                font-size: 14px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #000000;
+                line-height: 16px;
+                -webkit-background-clip: text;
+                margin-right: 12px;
+            }
+
+            .gear-adjust-wrapper {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+
+                .gear-speed {
+                    font-size: 12px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    color: #2558BF;
+                    -webkit-background-clip: text;
+                    margin-bottom: 4px;
+                }
+
+                .gear-button-wrapper {
+                    display: flex;
+                    align-items: center;
+
+                    .low2 {
+                        width: 164px;
+                        height: 10px;
+                        border-radius: 6px 0 0 6px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    .high3 {
+                        width: 164px;
+                        height: 10px;
+                        border-radius: 0 6px 6px 0;
+                        cursor: pointer;
+                    }
+
+                    .low3 {
+                        width: 104px;
+                        height: 10px;
+                        border-radius: 6px 0 0 6px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    .middle3 {
+                        width: 104px;
+                        height: 10px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    .high3 {
+                        width: 104px;
+                        height: 10px;
+                        border-radius: 0 6px 6px 0;
+                        cursor: pointer;
+                    }
+
+                    .low5 {
+                        width: 62px;
+                        height: 10px;
+                        border-radius: 6px 0 0 6px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    .low-middle5 {
+                        width: 62px;
+                        height: 10px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    .middle5 {
+                        width: 62px;
+                        height: 10px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    .middle-high5 {
+                        width: 62px;
+                        height: 10px;
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    .high5 {
+                        width: 62px;
+                        height: 10px;
+                        border-radius: 0 6px 6px 0;
+                        cursor: pointer;
+                    }
+                }
+
+                // 这个div只参与布局
+                .placeholder-div {
+                    font-size: 12px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 400;
+                    -webkit-background-clip: text;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}
